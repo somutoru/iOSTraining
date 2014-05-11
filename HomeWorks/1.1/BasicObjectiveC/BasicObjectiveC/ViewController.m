@@ -10,6 +10,7 @@
 #import "MixiSampleClass.h"
 #import "NSString+HogeAddition.h"
 #import "MixiSampleViewController.h"
+#import "MixiPostViewController.h"
 
 @interface ViewController ()
 
@@ -42,6 +43,19 @@
 
 - (IBAction)pressRemoveButton:(id)sender {
     [_sampleVC.view removeFromSuperview];
+}
+
+- (IBAction)buttonAddModalPushed:(id)sender {
+    MixiPostViewController *postViewController = [[MixiPostViewController alloc] init];
+    postViewController.delegate = self;
+    [self presentViewController:postViewController animated:YES completion:nil];
+}
+
+// [6] delegate method の実装
+#pragma mark - MixiPostViewControllerDelegate methods
+-(void)didPressCloseButton
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

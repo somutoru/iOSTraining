@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
             <connections>
                 <outlet property="buttonAdd" destination="6JS-6a-iFe" id="WCJ-yH-9a3"/>
+                <outlet property="buttonAddModal" destination="qKj-Fj-wNw" id="dLq-1i-TMI"/>
                 <outlet property="buttonRemove" destination="Kag-aZ-Q1l" id="B70-vK-Hli"/>
                 <outlet property="view" destination="6" id="7"/>
             </connections>
@@ -35,6 +36,16 @@
                     </state>
                     <connections>
                         <action selector="pressRemoveButton:" destination="-1" eventType="touchUpInside" id="xcj-rj-4Lw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKj-Fj-wNw">
+                    <rect key="frame" x="114" y="340" width="74" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="add modal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonAddModalPushed:" destination="-1" eventType="touchUpInside" id="88Z-vA-cOq"/>
                     </connections>
                 </button>
             </subviews>

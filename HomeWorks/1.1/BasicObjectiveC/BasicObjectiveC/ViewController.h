@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MixiPostViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <MixiPostViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *buttonAdd;
 @property (weak, nonatomic) IBOutlet UIButton *buttonRemove;
+@property (weak, nonatomic) IBOutlet UIButton *buttonAddModal;
 
 @end
