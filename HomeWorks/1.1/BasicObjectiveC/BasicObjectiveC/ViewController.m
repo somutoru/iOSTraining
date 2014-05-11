@@ -9,8 +9,11 @@
 #import "ViewController.h"
 #import "MixiSampleClass.h"
 #import "NSString+HogeAddition.h"
+#import "MixiSampleViewController.h"
 
 @interface ViewController ()
+
+@property (strong, nonatomic) MixiSampleViewController *sampleVC;
 
 @end
 
@@ -24,12 +27,21 @@
     NSLog(@"mixi.name: %@", mixi.name);
     NSLog(@"mixi.name.addHoge: %@", mixi.name.addHoge);
     NSLog(@"MixiSampleClass.staticString: %@", [MixiSampleClass getStaticString]);
+    _sampleVC = [[MixiSampleViewController alloc] initWithNibName:@"MixiSampleViewController" bundle:nil];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)pressAddButton:(id)sender {
+    [self.view addSubview:_sampleVC.view];
+}
+
+- (IBAction)pressRemoveButton:(id)sender {
+    [_sampleVC.view removeFromSuperview];
 }
 
 @end
