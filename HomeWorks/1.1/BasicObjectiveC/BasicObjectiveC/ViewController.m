@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MixiSampleClass.h"
 
 @interface ViewController ()
 
@@ -17,10 +18,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // TODO ここに課題を書き進めていってください
-
-
+    
+    MixiSampleClass *mixi = [[MixiSampleClass alloc] initWithName:@"mixi" sampleType:SampleTypeFuga];
+    NSLog(@"mixi.name: %@", mixi.name);
+    NSLog(@"MixiSampleClass.staticString: %@", [MixiSampleClass getStaticString]);
 }
 
 - (void)didReceiveMemoryWarning
