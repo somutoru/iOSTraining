@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MixiSampleClass.h"
+#import "NSString+HogeAddition.h"
 
 @interface ViewController ()
 
@@ -21,6 +22,7 @@
     
     MixiSampleClass *mixi = [[MixiSampleClass alloc] initWithName:@"mixi" sampleType:SampleTypeFuga];
     NSLog(@"mixi.name: %@", mixi.name);
+    NSLog(@"mixi.name.addHoge: %@", mixi.name.addHoge);
     NSLog(@"MixiSampleClass.staticString: %@", [MixiSampleClass getStaticString]);
 }
 

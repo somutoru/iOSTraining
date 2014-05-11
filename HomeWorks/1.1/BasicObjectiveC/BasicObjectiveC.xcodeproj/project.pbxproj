@@ -19,6 +19,7 @@
 		5405EF1C171D454500C6E9F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5405EF1B171D454500C6E9F5 /* ViewController.m */; };
 		5405EF1F171D454500C6E9F5 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5405EF1D171D454500C6E9F5 /* ViewController.xib */; };
 		BA4B10CD191FB74D005868A3 /* MixiSampleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4B10CC191FB74D005868A3 /* MixiSampleClass.m */; };
+		BA4B10D0191FBC2F005868A3 /* NSString+HogeAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4B10CF191FBC2F005868A3 /* NSString+HogeAddition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		5405EF1E171D454500C6E9F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		BA4B10CB191FB74D005868A3 /* MixiSampleClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiSampleClass.h; sourceTree = "<group>"; };
 		BA4B10CC191FB74D005868A3 /* MixiSampleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiSampleClass.m; sourceTree = "<group>"; };
+		BA4B10CE191FBC2F005868A3 /* NSString+HogeAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HogeAddition.h"; sourceTree = "<group>"; };
+		BA4B10CF191FBC2F005868A3 /* NSString+HogeAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HogeAddition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				5405EF1D171D454500C6E9F5 /* ViewController.xib */,
 				BA4B10CB191FB74D005868A3 /* MixiSampleClass.h */,
 				BA4B10CC191FB74D005868A3 /* MixiSampleClass.m */,
+				BA4B10CE191FBC2F005868A3 /* NSString+HogeAddition.h */,
+				BA4B10CF191FBC2F005868A3 /* NSString+HogeAddition.m */,
 				5405EF09171D454500C6E9F5 /* Supporting Files */,
 			);
 			path = BasicObjectiveC;
@@ -179,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5405EF0F171D454500C6E9F5 /* main.m in Sources */,
+				BA4B10D0191FBC2F005868A3 /* NSString+HogeAddition.m in Sources */,
 				5405EF13171D454500C6E9F5 /* AppDelegate.m in Sources */,
 				5405EF1C171D454500C6E9F5 /* ViewController.m in Sources */,
 				BA4B10CD191FB74D005868A3 /* MixiSampleClass.m in Sources */,
