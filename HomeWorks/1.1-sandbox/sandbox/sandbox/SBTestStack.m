@@ -25,7 +25,7 @@
 };
 
 - (NSInteger)size {
-    return self.stack .count;
+    return self.stack.count;
 };
 
 - (id)pop {
