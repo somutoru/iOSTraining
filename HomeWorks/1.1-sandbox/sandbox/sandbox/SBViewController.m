@@ -82,7 +82,28 @@
     
     int a = [number intValue]; // int型へ変換
     NSLog(@"%d", a);
-
+    
+    
+    // 課題1-1-1
+    NSArray *array1_1_1 = @[
+                            @{
+                                @"domain": @"mixi.jp",
+                                @"entry": @[
+                                        @"list_voice.pl",
+                                        @"list_diary.pl",
+                                        @"list_mymall_item.pl"]
+                                },
+                            @{
+                                @"domain": @"mmall.jp",
+                                @"entry": @[@{
+                                                @"path": @"add_diary.pl",
+                                                @"query": @[@{@"tag_id": @7}]}]
+                                },
+                            @{
+                                @"domain": @"itunes.apple.com"
+                                },
+                            ];
+   NSLog(@"%@", array1_1_1.description);
 }
 
 - (void)didReceiveMemoryWarning
