@@ -15,6 +15,7 @@
 @interface ViewController ()
 
 @property (strong, nonatomic) MixiSampleViewController *sampleVC;
+@property (assign) BOOL isModalOpenSecond;
 
 @end
 
@@ -29,6 +30,8 @@
     NSLog(@"mixi.name.addHoge: %@", mixi.name.addHoge);
     NSLog(@"MixiSampleClass.staticString: %@", [MixiSampleClass getStaticString]);
     _sampleVC = [[MixiSampleViewController alloc] initWithNibName:@"MixiSampleViewController" bundle:nil];
+    
+    self.isModalOpenSecond = NO;
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,7 +58,14 @@
 #pragma mark - MixiPostViewControllerDelegate methods
 -(void)didPressCloseButton
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:^{
+        if (self.isModalOpenSecond) {
+            MixiPostViewController *postViewController = [[MixiPostViewController alloc] init];
+            postViewController.delegate = self;
+            [self presentViewController:postViewController animated:YES completion:nil];
+        }
+        self.isModalOpenSecond = YES;
+    }];
 }
 
 @end
