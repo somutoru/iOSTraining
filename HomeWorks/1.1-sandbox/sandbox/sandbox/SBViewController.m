@@ -7,6 +7,8 @@
 //
 
 #import "SBViewController.h"
+#import "SBTestQueue.h"
+#import "SBTestStack.h"
 
 @interface SBViewController ()
 
@@ -103,7 +105,42 @@
                                 @"domain": @"itunes.apple.com"
                                 },
                             ];
-   NSLog(@"%@", array1_1_1.description);
+    NSLog(@"%@", array1_1_1.description);
+    
+    // 課題1-1-2
+    //// Queue
+    SBTestQueue *queue = SBTestQueue.new;
+    NSLog(@"queue:%@, size:%ld", queue.description, queue.size);
+    [queue push:@"hoge"];
+    [queue push:@"fuga"];
+    [queue push:@123];
+    NSLog(@"queue:%@, size:%ld", queue.description, queue.size);
+    id poped_queue_obj = [queue pop];
+    NSLog(@"poped_queue_obj:%@", poped_queue_obj);
+    NSLog(@"queue:%@, size:%ld", queue.description, queue.size);
+    poped_queue_obj = [queue pop];
+    NSLog(@"poped_queue_obj:%@", poped_queue_obj);
+    NSLog(@"queue:%@, size:%ld", queue.description, queue.size);
+    poped_queue_obj = [queue pop];
+    NSLog(@"poped_queue_obj:%@", poped_queue_obj);
+    NSLog(@"queue:%@, size:%ld", queue.description, queue.size);
+    
+    //// Stack
+    SBTestStack *stack = SBTestStack.new;
+    NSLog(@"stack:%@, size:%ld", stack.description, stack.size);
+    [stack push:@"hoge"];
+    [stack push:@"fuga"];
+    [stack push:@123];
+    NSLog(@"stack:%@, size:%ld", stack.description, stack.size);
+    id poped_stack_obj = [stack pop];
+    NSLog(@"poped_stack_obj:%@", poped_stack_obj);
+    NSLog(@"stack:%@, size:%ld", stack.description, stack.size);
+    poped_stack_obj = [stack pop];
+    NSLog(@"poped_stack_obj:%@", poped_stack_obj);
+    NSLog(@"stack:%@, size:%ld", stack.description, stack.size);
+    poped_stack_obj = [stack pop];
+    NSLog(@"poped_stack_obj:%@", poped_stack_obj);
+    NSLog(@"stack:%@, size:%ld", stack.description, stack.size);
 }
 
 - (void)didReceiveMemoryWarning

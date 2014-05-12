@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04862D9219207A2300641361 /* SBTestStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 04862D9119207A2300641361 /* SBTestStack.m */; };
 		04BBA77219206999005F74CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BBA77119206999005F74CD /* Foundation.framework */; };
 		04BBA77419206999005F74CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BBA77319206999005F74CD /* CoreGraphics.framework */; };
 		04BBA77619206999005F74CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BBA77519206999005F74CD /* UIKit.framework */; };
@@ -22,6 +23,7 @@
 		04BBA79619206999005F74CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BBA77519206999005F74CD /* UIKit.framework */; };
 		04BBA79E19206999005F74CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04BBA79C19206999005F74CD /* InfoPlist.strings */; };
 		04BBA7A019206999005F74CD /* sandboxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BBA79F19206999005F74CD /* sandboxTests.m */; };
+		04BBA7AB1920762A005F74CD /* SBTestQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BBA7AA1920762A005F74CD /* SBTestQueue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04862D9019207A2300641361 /* SBTestStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTestStack.h; sourceTree = "<group>"; };
+		04862D9119207A2300641361 /* SBTestStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBTestStack.m; sourceTree = "<group>"; };
 		04BBA76E19206999005F74CD /* sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BBA77119206999005F74CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		04BBA77319206999005F74CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +59,8 @@
 		04BBA79B19206999005F74CD /* sandboxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sandboxTests-Info.plist"; sourceTree = "<group>"; };
 		04BBA79D19206999005F74CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		04BBA79F19206999005F74CD /* sandboxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sandboxTests.m; sourceTree = "<group>"; };
+		04BBA7A91920762A005F74CD /* SBTestQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTestQueue.h; sourceTree = "<group>"; };
+		04BBA7AA1920762A005F74CD /* SBTestQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBTestQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,10 @@
 				04BBA78619206999005F74CD /* Main_iPad.storyboard */,
 				04BBA78919206999005F74CD /* SBViewController.h */,
 				04BBA78A19206999005F74CD /* SBViewController.m */,
+				04BBA7A91920762A005F74CD /* SBTestQueue.h */,
+				04BBA7AA1920762A005F74CD /* SBTestQueue.m */,
+				04862D9019207A2300641361 /* SBTestStack.h */,
+				04862D9119207A2300641361 /* SBTestStack.m */,
 				04BBA78C19206999005F74CD /* Images.xcassets */,
 				04BBA77819206999005F74CD /* Supporting Files */,
 			);
@@ -254,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04862D9219207A2300641361 /* SBTestStack.m in Sources */,
 				04BBA77E19206999005F74CD /* main.m in Sources */,
 				04BBA78B19206999005F74CD /* SBViewController.m in Sources */,
+				04BBA7AB1920762A005F74CD /* SBTestQueue.m in Sources */,
 				04BBA78219206999005F74CD /* SBAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +483,7 @@
 				04BBA7A519206999005F74CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04BBA7A619206999005F74CD /* Build configuration list for PBXNativeTarget "sandboxTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +492,7 @@
 				04BBA7A819206999005F74CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
